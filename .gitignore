@@ -1,0 +1,6 @@
+*.elf
+*.img
+*.lps
+*.res
+backup/
+lib/

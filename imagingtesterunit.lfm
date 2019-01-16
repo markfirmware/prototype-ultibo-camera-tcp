@@ -1,0 +1,54 @@
+object Form1: TForm1
+  Left = 287
+  Height = 587
+  Top = 103
+  Width = 685
+  HorzScrollBar.Page = 978
+  HorzScrollBar.Range = 978
+  VertScrollBar.Page = 472
+  VertScrollBar.Range = 472
+  ActiveControl = EditIpAddress
+  Caption = 'Image Device Tester'
+  ClientHeight = 587
+  ClientWidth = 685
+  OnCreate = FormCreate
+  Visible = False
+  object StreamStopButton: TButton
+    Left = 312
+    Height = 25
+    Top = 0
+    Width = 75
+    Caption = 'Stop'
+    Enabled = False
+    OnClick = StreamStopButtonClick
+    TabOrder = 0
+  end
+  object Image32: TImage32
+    Left = 16
+    Height = 528
+    Top = 32
+    Width = 640
+    Bitmap.ResamplerClassName = 'TNearestResampler'
+    BitmapAlign = baTopLeft
+    Scale = 1
+    ScaleMode = smOptimal
+    TabOrder = 1
+  end
+  object EditIpAddress: TEdit
+    Left = 24
+    Height = 23
+    Top = 0
+    Width = 185
+    TabOrder = 2
+    Text = 'Enter IP Address Here'
+  end
+  object StreamButton: TButton
+    Left = 224
+    Height = 25
+    Top = 0
+    Width = 75
+    Caption = 'Stream'
+    OnClick = StreamButtonClick
+    TabOrder = 3
+  end
+end
